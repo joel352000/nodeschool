@@ -5,7 +5,7 @@ For this exercise we'll be creating a raw TCP server. There's no HTTP involved h
 
 The net module has a method named net.createServer() that takes a callback function. Unlike most callbacks in Node, the callback used by createServer() is called more than once. Every connection received by your server triggers another call to the callback. The callback function has the signature:
 
-    function callback (socket) { /* ... */ }
+    function callback (socket) { ... }
 
 net.createServer() also returns an instance of your server. You must call server.listen(portNumber) to start listening on a particular port.
 
